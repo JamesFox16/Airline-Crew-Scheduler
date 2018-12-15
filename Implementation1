@@ -1,0 +1,117 @@
+I N T R O D U C T I O N
+
+P U R P O S E
+	The purpose of the database-centric application (DCA) for the Airline Crew Scheduler is to 
+	keep track of which employees are on--or are scheduled to be on--each flight.
+
+S C O P E
+	The scope of the DCA is to keep track of all airline employees on--or scheduled to be on--each flight.
+	The system will run additional checks and updates recorded in an electronic log, which can be
+	searched by the client, flight crew member, airport, and other users. The DCA software will 
+	provide an interface application that will act as a user-friendly and easy to use searching, 
+	viewing, and updating interface, instead of having to interact with the code directly.
+
+OBJECTIVES AND SUCCESS CRITERIA
+	The objectives and success criteria of the DCA project is to identify if qualifications are met,
+	develop a database, and develop an easy to use interface that will act as a user-friendly interactive
+	shortcut to the database. The application will be able to provide consistent and precise accuracy
+	by making sure all data	is correct throughout the program application. If the application software
+	detects a violation of a constraint that has been implemented, the application will alert the 
+	user of the violation(s) occurring.
+
+DEFINITIONS , ACRONYMS , AND ABBREVIATIONS
+	DCA = Database-centric Application
+	GUI = Graphical User Interface
+	OOP = Object Oriented Programming
+	SQL = Structured Query Language
+
+O V E R V I E W
+	The overview of the project is to create a working database-centric application system that 
+	is able to operate on a large scale by storing data of various information, which can be used to monitor
+	and provide info to the user in an easy to use/view interface. We would first start off by 
+	establishing the database and then designing an easy to use, user-friendly interface for traversing
+	through the data.
+
+PROPOSED SYSTEM OVERVIEW
+	The proposed system “database-centric application” will be an easy to use database application 
+	software. It will consist of a large database that will offer an easy to use and interactive 
+	interface to traverse through data through the use of searches of different variables, and the 
+	interface will then return specific data relevant to the input data. The database will be 
+	implemented in a closed source database, but will be able to be modified by the client after 
+	development release. The easy to use interface will ask for a variable input such as flight ID
+	number, and it will then return the departure and destination airports and times, along with other
+	possible variables if the client would like.
+
+
+FUNCTIONAL  REQUIREMENTS
+F1. The DCA must be able to record and store many various datapoints attributed to individual flights
+    including: flight number, aircraft type and registration number, crew members, origin and 
+    destination airports, and takeoff and touchdown times. After being stored, the data should be 
+    easily accesible through a user-friendly interface.
+F2. The data stored by the DCA in the database will also implement basic-level security as to prevent
+    breaches such as SQL interjection attacks or access of information by unauthorized personnel.
+F3. The software will also be able to track updates made to the scheduling of crew memebers including: 
+    placement of aircrafts and employees, creation and cancellation of flights, adjustments to takeoff 
+    and touchdown times, and changes to on-flight crew or the aircraft itself. All updates to the scheduler
+    will be tracked by update numbers.
+F4. The software is also responsible for keeping track of the hours worked by employees. Schduling is 
+    subject to constraints such as eight-hour days, rest periods between shifts, and in-flight delays 
+    that cause an extension of hours. All of these constraints will be implemented into the DCA to ensure 
+    that no employeees are over-scheduled.
+    
+
+
+NONFUNCTIONAL REQUIREMENTS
+
+USABILITY
+    Clients and users will be able to view the information stored by the DCA through the use of a
+    simple and user-friendly interface that accesses the database for them. Information will be displayed 
+    in "spreadsheets" that provide readability and simplicity.
+RELIABILITY
+    In order to ensure reliability in the DCA, all data stored in the database will be backed-up so that
+    any unforseen failure in the database will not result in total loss of critical information. This 
+    attribute of the DCA ensures the protection of all collected information and increases system reliability.
+PERFORMANCE
+    The DCA will be designed and implemented in such a way as to maximize usage and performance efficiency.
+    Updates to information stored by the DCA will be fast and precise and will be available almost immediately 
+    to users.
+IMPLEMENTATION
+    The DCA can be accessed via the internet if the user knows the link needed to access the website. Online 
+    access increases usability of the software by ensuring that information is not solely limited to local 
+    access. 
+INTERFACE
+    As stated previously, users will be able to access data through the use of a user-friendly interface. This 
+    Graphical User Interface (GUI) will be simple and easily navigated so that the interface communicates with
+    the database, and there is no need for the user to interact with the code or database directly. Solicited
+    information will then be displayed in an easy to read format to maximize simplicity for the user.
+
+
+SYSTEM MODELS SCENARIOS
+*What is the best, average, worst case*
+    The best case scneario for the database-centric application would be that everything
+    is working perfectly with no bugs or loading errors. Everything is recieving and sending
+    data from the database to the user with 100% accuracy.
+    
+    The normal case sceanrio is that the application is running well with little errors and
+    load time is somewhat slow, but not to the point of running an error. Their may be
+    few errors.
+    
+    Worst case scenario is nothing is working.
+
+
+USE CASE MODEL
+06 Requirements Elicitation  32/87
+Best case Scenario
+    The Best case scenario
+        A flight crew member is up to their 8 hour flight time restriction.
+        They arrive at their destination airport.
+        The database sends an alert to the system.
+        The system alerts the standby crew member.
+        The standby crew member to replace them are on sight because they have been scheduled appropriately.
+        
+Worst case Scenario
+    The worst case scenario
+        The user searches the database for the destination for their flight
+        The database retrieves a random destination because no id structure is in place.
+        The database sends the random destination data to the user's search results.
+        

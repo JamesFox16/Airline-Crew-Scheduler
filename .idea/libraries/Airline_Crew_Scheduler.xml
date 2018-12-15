@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Airline-Crew-Scheduler">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src/src" />
+    </SOURCES>
+  </library>
+</component>
